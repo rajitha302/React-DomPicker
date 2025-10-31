@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="React-DomPicker - Click any UI element to instantly jump to its React source code in VS Code. Perfect for React + Tailwind + ShadCN projects.">
-    <meta name="keywords" content="React, Chrome Extension, VS Code, Developer Tools, DOM Picker, Code Navigation">
+        content="React-DomPicker - Click any UI element to instantly jump to its React source code in VS Code. Works with React 16-19. Perfect for React + Tailwind + ShadCN projects.">
+    <meta name="keywords"
+        content="React, React 19, Chrome Extension, VS Code, Developer Tools, DOM Picker, Code Navigation, Click to Component">
     <meta name="author" content="Rajitha Disanayaka">
     <title>React-DomPicker - Jump from Browser to Code in Seconds</title>
 
@@ -20,8 +21,8 @@
                 extend: {
                     colors: {
                         primary: {
-                            500: '#667eea',
-                            600: '#764ba2',
+                            500: '#3b82f6',
+                            600: '#2563eb',
                         }
                     }
                 }
@@ -64,14 +65,14 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
         }
 
         .glass-effect {
@@ -88,20 +89,20 @@
     <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
-                    <span class="text-3xl">🎯</span>
+                <div class="flex items-center space-x-3">
+                    <img src="icon.png" alt="React-DomPicker Logo" class="w-10 h-10 rounded-lg">
                     <span class="text-xl font-bold gradient-text">React-DomPicker</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-700 hover:text-purple-600 transition">Features</a>
-                    <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 transition">How It Works</a>
-                    <a href="#installation" class="text-gray-700 hover:text-purple-600 transition">Installation</a>
-                    <a href="#demo" class="text-gray-700 hover:text-purple-600 transition">Demo</a>
-                    <a href="#support" class="text-gray-700 hover:text-purple-600 transition">Support</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition">Features</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-blue-600 transition">How It Works</a>
+                    <a href="#installation" class="text-gray-700 hover:text-blue-600 transition">Installation</a>
+                    <a href="#demo" class="text-gray-700 hover:text-blue-600 transition">Demo</a>
+                    <a href="#support" class="text-gray-700 hover:text-blue-600 transition">Support</a>
                 </div>
-                <a href="https://github.com/rajitha302/Dom-Map" target="_blank"
+                <a href="https://www.producthunt.com/products/react-dompicker" target="_blank"
                     class="px-4 py-2 gradient-bg text-white rounded-lg hover:opacity-90 transition">
-                    GitHub
+                    Product Hunt
                 </a>
             </div>
         </div>
@@ -116,16 +117,17 @@
                     <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                         Jump from Browser to Code in <span class="underline decoration-wavy">Seconds</span>
                     </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-purple-100">
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100">
                         Click any UI element to instantly jump to its React source code in VS Code.
                         Perfect for React + Tailwind + ShadCN projects.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="#" target="_blank"
-                            class="px-8 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg text-center">
-                            📦 Install Chrome Extension (Coming Soon)
+                        <a href="https://chromewebstore.google.com/detail/pgfkdfnigjfldfdbnigddjalgjnhgdoa"
+                            target="_blank"
+                            class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg text-center">
+                            🌐 Install Chrome Extension
                         </a>
                         <a href="https://marketplace.visualstudio.com/items?itemName=RajithaDisanayaka.react-codebridge"
                             target="_blank"
@@ -134,13 +136,13 @@
                         </a>
                     </div>
 
-                    <div class="flex items-center space-x-6 text-purple-100">
+                    <div class="flex items-center space-x-6 text-blue-100 flex-wrap gap-2 mb-6">
                         <div class="flex items-center space-x-2">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <span>Free & Open Source</span>
+                            <span>React 16-19 Support</span>
                         </div>
                         <div class="flex items-center space-x-2">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -159,6 +161,16 @@
                             <span>Localhost Only</span>
                         </div>
                     </div>
+
+                    <!-- Product Hunt Badge -->
+                    <div class="inline-block">
+                        <a href="https://www.producthunt.com/products/react-dompicker?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-react&#0045;dompicker"
+                            target="_blank">
+                            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1032823&theme=light&t=1761885501954"
+                                alt="React&#0045;DomPicker - Jump&#0032;from&#0032;browser&#0032;to&#0032;code&#0032;in&#0032;seconds | Product Hunt"
+                                style="width: 250px; height: 54px;" width="250" height="54" />
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Right Demo Placeholder -->
@@ -173,7 +185,7 @@
                             <div class="bg-gray-800 rounded p-4 text-green-400 font-mono text-sm">
                                 <div class="mb-2">$ npm run dev</div>
                                 <div class="text-gray-500">→ Local: http://localhost:3000</div>
-                                <div class="text-purple-400 mt-3">🎯 React-DomPicker: Active</div>
+                                <div class="text-blue-400 mt-3">🎯 React-DomPicker: Active</div>
                             </div>
                         </div>
                         <div class="text-center text-white text-sm">
@@ -183,7 +195,7 @@
 
                     <!-- Decorative Elements -->
                     <div
-                        class="absolute -top-4 -right-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse">
+                        class="absolute -top-4 -right-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse">
                     </div>
                     <div class="absolute -bottom-8 -left-4 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"
                         style="animation-delay: 2s;"></div>
@@ -286,53 +298,49 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 relative">
-                <!-- Connection Line -->
-                <div class="hidden md:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 opacity-20"
-                    style="width: 80%; margin-left: 10%;"></div>
-
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Step 1 -->
-                <div class="relative text-center">
-                    <div class="inline-block p-8 gradient-bg rounded-full mb-6 relative z-10">
-                        <div class="text-6xl">📦</div>
+                <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-20 h-20 gradient-bg rounded-full mb-6">
+                        <div class="text-4xl">📦</div>
                     </div>
-                    <div
-                        class="absolute top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl font-bold z-20">
-                        1
+                    <div class="mb-4">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 bg-blue-100 text-blue-600 rounded-full font-bold text-lg mb-2">1</span>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Install Extensions</h3>
                     <p class="text-gray-600">
-                        Install React-DomPicker Chrome extension and React-CodeBridge VS Code extension. Both are free.
+                        Install both the Chrome and VS Code extensions from their respective stores.
                     </p>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="relative text-center">
-                    <div class="inline-block p-8 gradient-bg rounded-full mb-6 relative z-10">
-                        <div class="text-6xl">🎯</div>
+                <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-20 h-20 gradient-bg rounded-full mb-6">
+                        <div class="text-4xl">🎯</div>
                     </div>
-                    <div
-                        class="absolute top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl font-bold z-20">
-                        2
+                    <div class="mb-4">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 bg-blue-100 text-blue-600 rounded-full font-bold text-lg mb-2">2</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Activate & Click</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Click Any Element</h3>
                     <p class="text-gray-600">
-                        Click the extension icon to activate. Hover over any element and click to select it.
+                        Activate the extension and click on any UI element in your browser.
                     </p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="relative text-center">
-                    <div class="inline-block p-8 gradient-bg rounded-full mb-6 relative z-10">
-                        <div class="text-6xl">⚡</div>
+                <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-20 h-20 gradient-bg rounded-full mb-6">
+                        <div class="text-4xl">⚡</div>
                     </div>
-                    <div
-                        class="absolute top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl font-bold z-20">
-                        3
+                    <div class="mb-4">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 bg-blue-100 text-blue-600 rounded-full font-bold text-lg mb-2">3</span>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Jump to Code</h3>
                     <p class="text-gray-600">
-                        VS Code instantly opens the exact file and line where that component is defined. Start coding!
+                        VS Code opens the exact file and highlights the component. Start coding!
                     </p>
                 </div>
             </div>
@@ -372,7 +380,7 @@
                         <div class="text-5xl mr-4">🌐</div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900">Chrome Extension</h3>
-                            <p class="text-gray-600">React-DomPicker</p>
+                            <p class="text-gray-600">React-DomPicker v1.2.1</p>
                         </div>
                     </div>
 
@@ -382,8 +390,7 @@
                                 class="flex-shrink-0 w-8 h-8 gradient-bg rounded-full flex items-center justify-center text-white font-bold mr-3">
                                 1</div>
                             <div>
-                                <p class="text-gray-700">Open Chrome and go to <code
-                                        class="bg-gray-100 px-2 py-1 rounded text-sm">chrome://extensions/</code></p>
+                                <p class="text-gray-700">Click the button below to visit the Chrome Web Store</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -391,7 +398,7 @@
                                 class="flex-shrink-0 w-8 h-8 gradient-bg rounded-full flex items-center justify-center text-white font-bold mr-3">
                                 2</div>
                             <div>
-                                <p class="text-gray-700">Enable "Developer mode" in the top right</p>
+                                <p class="text-gray-700">Click "Add to Chrome" to install</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -399,7 +406,7 @@
                                 class="flex-shrink-0 w-8 h-8 gradient-bg rounded-full flex items-center justify-center text-white font-bold mr-3">
                                 3</div>
                             <div>
-                                <p class="text-gray-700">Click "Load unpacked" and select the extension folder</p>
+                                <p class="text-gray-700">Confirm the installation when prompted</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -412,10 +419,13 @@
                         </div>
                     </div>
 
-                    <a href="#" target="_blank"
+                    <a href="https://chromewebstore.google.com/detail/pgfkdfnigjfldfdbnigddjalgjnhgdoa" target="_blank"
                         class="block w-full text-center px-6 py-3 gradient-bg text-white rounded-lg font-semibold hover:opacity-90 transition">
-                        Download for Chrome (Coming Soon)
+                        Install on Chrome Web Store
                     </a>
+                    <p class="mt-4 text-sm text-gray-600 text-center">
+                        Also works on Edge, Brave, and other Chromium browsers
+                    </p>
                 </div>
 
                 <!-- VS Code Extension -->
@@ -424,7 +434,7 @@
                         <div class="text-5xl mr-4">💻</div>
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900">VS Code Extension</h3>
-                            <p class="text-gray-600">React-CodeBridge</p>
+                            <p class="text-gray-600">React-CodeBridge v1.2.1</p>
                         </div>
                     </div>
 
@@ -478,12 +488,13 @@
                     <div>
                         <h4 class="text-lg font-bold text-gray-900 mb-2">Requirements</h4>
                         <ul class="list-disc list-inside text-gray-700 space-y-1">
-                            <li>React application running on <code
+                            <li>React application (v16, 17, 18, or 19) running on <code
                                     class="bg-blue-100 px-2 py-1 rounded text-sm">localhost</code> or <code
                                     class="bg-blue-100 px-2 py-1 rounded text-sm">127.0.0.1</code></li>
                             <li>VS Code with React project folder open</li>
                             <li>Both extensions installed and active</li>
                             <li>WebSocket connection on port 51234 (automatically handled by VS Code extension)</li>
+                            <li>Development build of React (production builds lack debugging metadata)</li>
                         </ul>
                     </div>
                 </div>
@@ -506,7 +517,7 @@
             <!-- Video/GIF Placeholder -->
             <div class="max-w-4xl mx-auto">
                 <div
-                    class="relative aspect-video bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl shadow-2xl overflow-hidden">
+                    class="relative aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/-YX-OmuwgmY?si=6efXyR9l5-xwE-NX"
@@ -517,10 +528,6 @@
 
                     <!-- You can replace this with an actual video embed -->
                     <!-- <iframe class="w-full h-full" src="YOUR_VIDEO_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                </div>
-
-                <div class="mt-8 text-center text-gray-600">
-                    <p>To add your demo video, replace the placeholder with your YouTube embed or upload a GIF</p>
                 </div>
             </div>
         </div>
@@ -539,37 +546,38 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- GitHub -->
-                <a href="https://github.com/rajitha302/Dom-Map" target="_blank"
+                <!-- VS Code -->
+                <a href="https://marketplace.visualstudio.com/items?itemName=RajithaDisanayaka.react-codebridge"
+                    target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">📚</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Documentation</h3>
+                    <div class="text-5xl mb-4">💻</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">VS Code Extension</h3>
                     <p class="text-gray-600 mb-4">
-                        Read the full documentation, explore code examples, and learn advanced features.
+                        Install the React-CodeBridge extension from the VS Code Marketplace.
                     </p>
-                    <span class="text-purple-600 font-semibold">View on GitHub →</span>
+                    <span class="text-blue-600 font-semibold">Install Extension →</span>
                 </a>
 
-                <!-- Issues -->
-                <a href="https://github.com/rajitha302/Dom-Map/issues" target="_blank"
+                <!-- Chrome -->
+                <a href="https://chromewebstore.google.com/detail/pgfkdfnigjfldfdbnigddjalgjnhgdoa" target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">🐛</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Report Issues</h3>
+                    <div class="text-5xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Chrome Extension</h3>
                     <p class="text-gray-600 mb-4">
-                        Found a bug or have a feature request? Let us know on GitHub Issues.
+                        Install the React-DomPicker extension from the Chrome Web Store.
                     </p>
-                    <span class="text-purple-600 font-semibold">Report Issue →</span>
+                    <span class="text-blue-600 font-semibold">Install Extension →</span>
                 </a>
 
-                <!-- Contribute -->
-                <a href="https://github.com/rajitha302/Dom-Map" target="_blank"
+                <!-- Product Hunt -->
+                <a href="https://www.producthunt.com/products/react-dompicker" target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">💝</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Contribute</h3>
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Product Hunt</h3>
                     <p class="text-gray-600 mb-4">
-                        React-DomPicker is open source. Contributions, stars, and feedback are welcome!
+                        Check out our launch on Product Hunt and share your feedback!
                     </p>
-                    <span class="text-purple-600 font-semibold">View Source →</span>
+                    <span class="text-blue-600 font-semibold">View on Product Hunt →</span>
                 </a>
             </div>
 
@@ -586,18 +594,18 @@
                     </details>
 
                     <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold text-gray-900 cursor-pointer">Which React versions are supported?
+                        </summary>
+                        <p class="mt-3 text-gray-600">React-DomPicker supports React versions 16, 17, 18, and 19. It
+                            works with any React-based framework including Create React App, Next.js, Vite, Remix, and
+                            more.</p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
                         <summary class="font-semibold text-gray-900 cursor-pointer">Can I use it on production sites?
                         </summary>
                         <p class="mt-3 text-gray-600">No, React-DomPicker only works on localhost and 127.0.0.1 for
                             security reasons. It's designed exclusively for local development environments.</p>
-                    </details>
-
-                    <details class="bg-white p-6 rounded-lg shadow-md">
-                        <summary class="font-semibold text-gray-900 cursor-pointer">Which frameworks are supported?
-                        </summary>
-                        <p class="mt-3 text-gray-600">React-DomPicker works with any React-based framework including
-                            Create React App, Next.js, Vite, Remix, and more. As long as your app uses React, it will
-                            work!</p>
                     </details>
 
                     <details class="bg-white p-6 rounded-lg shadow-md">
@@ -619,14 +627,14 @@
                         <span class="text-3xl">🎯</span>
                         <span class="text-xl font-bold">React-DomPicker</span>
                     </div>
-                    <p class="text-purple-100">
+                    <p class="text-blue-100">
                         Jump from browser to code in seconds. Built for React developers who value speed.
                     </p>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Product</h4>
-                    <ul class="space-y-2 text-purple-100">
+                    <ul class="space-y-2 text-blue-100">
                         <li><a href="#features" class="hover:text-white transition">Features</a></li>
                         <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
                         <li><a href="#installation" class="hover:text-white transition">Installation</a></li>
@@ -636,35 +644,31 @@
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Resources</h4>
-                    <ul class="space-y-2 text-purple-100">
-                        <li><a href="https://github.com/rajitha302/Dom-Map" target="_blank"
-                                class="hover:text-white transition">Documentation</a></li>
-                        <li><a href="https://github.com/rajitha302/Dom-Map/issues" target="_blank"
-                                class="hover:text-white transition">Support</a></li>
-                        <li><a href="https://github.com/rajitha302/Dom-Map" target="_blank"
-                                class="hover:text-white transition">GitHub</a></li>
+                    <ul class="space-y-2 text-blue-100">
                         <li><a href="https://marketplace.visualstudio.com/items?itemName=RajithaDisanayaka.react-codebridge"
                                 target="_blank" class="hover:text-white transition">VS Code Marketplace</a></li>
+                        <li><a href="https://chromewebstore.google.com/detail/pgfkdfnigjfldfdbnigddjalgjnhgdoa"
+                                target="_blank" class="hover:text-white transition">Chrome Web Store</a></li>
+                        <li><a href="https://www.producthunt.com/products/react-dompicker" target="_blank"
+                                class="hover:text-white transition">Product Hunt</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Connect</h4>
-                    <ul class="space-y-2 text-purple-100">
-                        <li><a href="https://github.com/rajitha302" target="_blank"
-                                class="hover:text-white transition">GitHub Profile</a></li>
-                        <li><a href="https://github.com/rajitha302/Dom-Map/issues" target="_blank"
-                                class="hover:text-white transition">Report Issue</a></li>
-                        <li><a href="https://github.com/rajitha302/Dom-Map" target="_blank"
-                                class="hover:text-white transition">Contribute</a></li>
+                    <ul class="space-y-2 text-blue-100">
+                        <li><a href="mailto:rajithadisanayake0@gmail.com"
+                                class="hover:text-white transition">Contact</a></li>
+                        <li><a href="https://www.producthunt.com/products/react-dompicker" target="_blank"
+                                class="hover:text-white transition">Product Hunt</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-purple-400 pt-8 text-center text-purple-100">
-                <p>&copy; 2024 React-DomPicker. Created by <a href="https://github.com/rajitha302" target="_blank"
-                        class="font-semibold hover:text-white transition">Rajitha Disanayaka</a></p>
-                <p class="mt-2 text-sm">Free & Open Source Software • MIT License</p>
+            <div class="border-t border-blue-400 pt-8 text-center text-blue-100">
+                <p>&copy; 2025 React-DomPicker (DOM→Code Bridge). Created by Rajitha Disanayaka</p>
+                <p class="mt-2 text-sm">Proprietary License • All Rights Reserved</p>
+                <p class="mt-2 text-sm">Personal use permitted through official distribution channels</p>
             </div>
         </div>
     </footer>
