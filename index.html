@@ -83,6 +83,49 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+
+        /* Tech Stack Carousel */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .carousel-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+
+        .carousel-container:hover .carousel-track {
+            animation-play-state: paused;
+        }
+
+        .carousel-item {
+            flex-shrink: 0;
+            margin: 0 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-item:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -454,53 +497,79 @@
                 </div>
             </div>
 
-            <!-- Tech Stack -->
-            <div class="mt-20 text-center">
-                <p class="text-gray-600 mb-6">Works with your favorite stack</p>
-                <div class="flex flex-wrap justify-center items-center gap-8">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/yqzmiobz.json"
-                        trigger="hover"
-                        colors="primary:#3b82f6"
-                        style="width:48px;height:48px"
-                        title="React">
-                    </lord-icon>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/nocovwne.json"
-                        trigger="hover"
-                        colors="primary:#3178c6"
-                        style="width:48px;height:48px"
-                        title="TypeScript">
-                    </lord-icon>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/xzksbhzh.json"
-                        trigger="hover"
-                        colors="primary:#38bdf8"
-                        style="width:48px;height:48px"
-                        title="Tailwind CSS">
-                    </lord-icon>
-                    <span title="Next.js" class="text-4xl">▲</span>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/fhtaantg.json"
-                        trigger="hover"
-                        colors="primary:#646cff"
-                        style="width:48px;height:48px"
-                        title="Vite">
-                    </lord-icon>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/cnbtyclj.json"
-                        trigger="hover"
-                        colors="primary:#007acc"
-                        style="width:48px;height:48px"
-                        title="VS Code">
-                    </lord-icon>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/ygvjgetg.json"
-                        trigger="hover"
-                        colors="primary:#3b82f6"
-                        style="width:48px;height:48px"
-                        title="Chrome">
-                    </lord-icon>
+            <!-- Tech Stack Carousel -->
+            <div class="mt-20">
+                <p class="text-gray-600 mb-6 text-center">Works with your favorite stack</p>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- First Set -->
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                 alt="React" title="React" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                 alt="TypeScript" title="TypeScript" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                                 alt="Tailwind CSS" title="Tailwind CSS" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                 alt="Next.js" title="Next.js" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"
+                                 alt="Vite" title="Vite" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                 alt="VS Code" title="VS Code" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+                                 alt="Chrome" title="Chrome" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg"
+                                 alt="Firefox" title="Firefox" class="w-16 h-16">
+                        </div>
+
+                        <!-- Duplicate Set for Seamless Loop -->
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                 alt="React" title="React" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                 alt="TypeScript" title="TypeScript" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                                 alt="Tailwind CSS" title="Tailwind CSS" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                 alt="Next.js" title="Next.js" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"
+                                 alt="Vite" title="Vite" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                 alt="VS Code" title="VS Code" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+                                 alt="Chrome" title="Chrome" class="w-16 h-16">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg"
+                                 alt="Firefox" title="Firefox" class="w-16 h-16">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
