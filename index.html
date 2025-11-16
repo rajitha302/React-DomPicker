@@ -14,6 +14,9 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- LordIcon CDN -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
     <!-- Custom Tailwind Configuration -->
     <script>
         tailwind.config = {
@@ -116,7 +119,12 @@
                 <div class="text-white fade-in-up">
                     <!-- React 19 Compatibility Badge -->
                     <div class="inline-flex items-center bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold mb-4 shadow-lg">
-                        <span class="text-2xl mr-2">⚛️</span>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yqzmiobz.json"
+                            trigger="loop"
+                            colors="primary:#111827,secondary:#3b82f6"
+                            style="width:32px;height:32px;margin-right:8px">
+                        </lord-icon>
                         <span>React 19 Compatible - The Only Tool That Still Works!</span>
                     </div>
 
@@ -135,18 +143,36 @@
                         <div class="flex flex-col sm:flex-row gap-4">
                             <a href="https://chromewebstore.google.com/detail/pgfkdfnigjfldfdbnigddjalgjnhgdoa"
                                 target="_blank"
-                                class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg text-center">
-                                🌐 Chrome Extension
+                                class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg text-center inline-flex items-center justify-center gap-2">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/ygvjgetg.json"
+                                    trigger="hover"
+                                    colors="primary:#3b82f6"
+                                    style="width:24px;height:24px">
+                                </lord-icon>
+                                Chrome Extension
                             </a>
                             <a href="https://addons.mozilla.org/en-US/firefox/addon/react-dompicker-official/"
                                 target="_blank"
-                                class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg text-center">
-                                🦊 Firefox Extension
+                                class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg text-center inline-flex items-center justify-center gap-2">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/wxnxiano.json"
+                                    trigger="hover"
+                                    colors="primary:#ff7a00"
+                                    style="width:24px;height:24px">
+                                </lord-icon>
+                                Firefox Extension
                             </a>
                             <a href="https://marketplace.visualstudio.com/items?itemName=RajithaDisanayaka.react-codebridge"
                                 target="_blank"
-                                class="px-6 py-3 glass-effect text-white rounded-lg font-semibold hover:bg-white/20 transition transform hover:scale-105 shadow-lg text-center">
-                                💻 VS Code Extension
+                                class="px-6 py-3 glass-effect text-white rounded-lg font-semibold hover:bg-white/20 transition transform hover:scale-105 shadow-lg text-center inline-flex items-center justify-center gap-2">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/cnbtyclj.json"
+                                    trigger="hover"
+                                    colors="primary:#ffffff"
+                                    style="width:24px;height:24px">
+                                </lord-icon>
+                                VS Code Extension
                             </a>
                         </div>
                         <p class="text-sm text-blue-100 text-center">v1.2.2 - Both extensions required to work together</p>
@@ -209,7 +235,15 @@
                             <div class="bg-gray-800 rounded p-4 text-green-400 font-mono text-sm">
                                 <div class="mb-2">$ npm run dev</div>
                                 <div class="text-gray-500">→ Local: http://localhost:3000</div>
-                                <div class="text-blue-400 mt-3">🎯 React-DomPicker: Active</div>
+                                <div class="text-blue-400 mt-3 flex items-center gap-2">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/uukerzzv.json"
+                                        trigger="loop"
+                                        colors="primary:#60a5fa"
+                                        style="width:20px;height:20px">
+                                    </lord-icon>
+                                    React-DomPicker: Active
+                                </div>
                             </div>
                         </div>
                         <div class="text-center text-white text-sm">
@@ -244,7 +278,14 @@
                 <!-- Feature 1 -->
                 <div
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-5xl mb-4">🛡️</div>
+                    <div class="mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/gqdnbnwt.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">3-Strategy Fallback System</h3>
                     <p class="text-gray-600">
                         Strategy 1: Direct Fiber mapping (100% accuracy). Strategy 2: Component hierarchy search (80-90%). Strategy 3: Multi-factor fuzzy matching (60-90%). Always finds your code.
@@ -254,7 +295,14 @@
                 <!-- Feature 2 -->
                 <div
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-5xl mb-4">⚛️</div>
+                    <div class="mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yqzmiobz.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">React 19 Compatible</h3>
                     <p class="text-gray-600">
                         The only tool that survived React 19's _debugSource removal. Works with React 16, 17, 18, and 19 through intelligent fallback strategies.
@@ -264,7 +312,14 @@
                 <!-- Feature 3 -->
                 <div
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-5xl mb-4">🎯</div>
+                    <div class="mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/uukerzzv.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Precise JSX Highlighting</h3>
                     <p class="text-gray-600">
                         AST-based parsing highlights the exact JSX element (opening to closing tag) in VS Code, not just the line. Powered by ts-morph.
@@ -274,7 +329,14 @@
                 <!-- Feature 4 -->
                 <div
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-5xl mb-4">📊</div>
+                    <div class="mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/fpmskzsv.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Confidence Indicators</h3>
                     <p class="text-gray-600">
                         Know match quality with HIGH/MEDIUM/LOW confidence scores. 8-factor algorithm analyzes tag, ID, classes, text, ARIA, context, siblings, and URL.
@@ -284,7 +346,14 @@
                 <!-- Feature 5 -->
                 <div
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-5xl mb-4">🌐</div>
+                    <div class="mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ygvjgetg.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Multi-Browser Support</h3>
                     <p class="text-gray-600">
                         Available for Chrome, Firefox, and Edge. Real-time WebSocket communication (port 51234) with auto-reconnect and exponential backoff.
@@ -294,7 +363,14 @@
                 <!-- Feature 6 -->
                 <div
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-                    <div class="text-5xl mb-4">⚡</div>
+                    <div class="mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/fhtaantg.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Large Codebase Ready</h3>
                     <p class="text-gray-600">
                         Optimized for 500+ component projects. Works with SSR frameworks (Next.js, Remix). Perfect for React + Tailwind + ShadCN stacks.
@@ -320,7 +396,12 @@
                 <!-- Step 1 -->
                 <div class="text-center">
                     <div class="inline-flex items-center justify-center w-20 h-20 gradient-bg rounded-full mb-6">
-                        <div class="text-4xl">📦</div>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/zpxybbhl.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                     </div>
                     <div class="mb-4">
                         <span
@@ -335,7 +416,12 @@
                 <!-- Step 2 -->
                 <div class="text-center">
                     <div class="inline-flex items-center justify-center w-20 h-20 gradient-bg rounded-full mb-6">
-                        <div class="text-4xl">🎯</div>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/uukerzzv.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                     </div>
                     <div class="mb-4">
                         <span
@@ -350,7 +436,12 @@
                 <!-- Step 3 -->
                 <div class="text-center">
                     <div class="inline-flex items-center justify-center w-20 h-20 gradient-bg rounded-full mb-6">
-                        <div class="text-4xl">⚡</div>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/fhtaantg.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                     </div>
                     <div class="mb-4">
                         <span
@@ -366,14 +457,50 @@
             <!-- Tech Stack -->
             <div class="mt-20 text-center">
                 <p class="text-gray-600 mb-6">Works with your favorite stack</p>
-                <div class="flex flex-wrap justify-center items-center gap-8 text-4xl">
-                    <span title="React">⚛️</span>
-                    <span title="TypeScript">💙</span>
-                    <span title="Tailwind CSS">🎨</span>
-                    <span title="Next.js">▲</span>
-                    <span title="Vite">⚡</span>
-                    <span title="VS Code">💻</span>
-                    <span title="Chrome">🌐</span>
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yqzmiobz.json"
+                        trigger="hover"
+                        colors="primary:#3b82f6"
+                        style="width:48px;height:48px"
+                        title="React">
+                    </lord-icon>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/nocovwne.json"
+                        trigger="hover"
+                        colors="primary:#3178c6"
+                        style="width:48px;height:48px"
+                        title="TypeScript">
+                    </lord-icon>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xzksbhzh.json"
+                        trigger="hover"
+                        colors="primary:#38bdf8"
+                        style="width:48px;height:48px"
+                        title="Tailwind CSS">
+                    </lord-icon>
+                    <span title="Next.js" class="text-4xl">▲</span>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/fhtaantg.json"
+                        trigger="hover"
+                        colors="primary:#646cff"
+                        style="width:48px;height:48px"
+                        title="Vite">
+                    </lord-icon>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/cnbtyclj.json"
+                        trigger="hover"
+                        colors="primary:#007acc"
+                        style="width:48px;height:48px"
+                        title="VS Code">
+                    </lord-icon>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ygvjgetg.json"
+                        trigger="hover"
+                        colors="primary:#3b82f6"
+                        style="width:48px;height:48px"
+                        title="Chrome">
+                    </lord-icon>
                 </div>
             </div>
         </div>
@@ -394,7 +521,14 @@
             <!-- VS Code Extension (Featured) -->
             <div class="mb-8 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl shadow-xl p-8 border-2 border-blue-300">
                 <div class="flex items-center mb-6">
-                    <div class="text-6xl mr-4">💻</div>
+                    <div class="mr-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/cnbtyclj.json"
+                            trigger="loop"
+                            colors="primary:#3b82f6,secondary:#60a5fa"
+                            style="width:72px;height:72px">
+                        </lord-icon>
+                    </div>
                     <div>
                         <h3 class="text-3xl font-bold text-gray-900">VS Code Extension (Required)</h3>
                         <p class="text-gray-600">React-CodeBridge v1.2.2 - Install this first</p>
@@ -443,7 +577,14 @@
                 <!-- Chrome Extension -->
                 <div class="bg-white rounded-2xl shadow-xl p-6">
                     <div class="text-center mb-4">
-                        <div class="text-5xl mb-2">🌐</div>
+                        <div class="flex justify-center mb-2">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/ygvjgetg.json"
+                                trigger="hover"
+                                colors="primary:#3b82f6"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                        </div>
                         <h3 class="text-xl font-bold text-gray-900">Chrome / Edge</h3>
                         <p class="text-sm text-gray-600">v1.2.2</p>
                     </div>
@@ -462,7 +603,14 @@
                 <!-- Firefox Extension -->
                 <div class="bg-white rounded-2xl shadow-xl p-6">
                     <div class="text-center mb-4">
-                        <div class="text-5xl mb-2">🦊</div>
+                        <div class="flex justify-center mb-2">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="hover"
+                                colors="primary:#ff7a00"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                        </div>
                         <h3 class="text-xl font-bold text-gray-900">Firefox</h3>
                         <p class="text-sm text-gray-600">v1.2.2</p>
                     </div>
@@ -481,7 +629,14 @@
                 <!-- Edge Extension -->
                 <div class="bg-white rounded-2xl shadow-xl p-6">
                     <div class="text-center mb-4">
-                        <div class="text-5xl mb-2">🔷</div>
+                        <div class="flex justify-center mb-2">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/ygvjgetg.json"
+                                trigger="hover"
+                                colors="primary:#0078d4"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                        </div>
                         <h3 class="text-xl font-bold text-gray-900">Edge</h3>
                         <p class="text-sm text-gray-600">v1.2.2</p>
                     </div>
@@ -501,7 +656,14 @@
             <!-- Requirements -->
             <div class="mt-12 bg-blue-50 border border-blue-200 rounded-xl p-6">
                 <div class="flex items-start">
-                    <div class="text-3xl mr-4">💡</div>
+                    <div class="mr-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/tmqaflqo.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6"
+                            style="width:36px;height:36px">
+                        </lord-icon>
+                    </div>
                     <div>
                         <h4 class="text-lg font-bold text-gray-900 mb-2">Requirements</h4>
                         <ul class="list-disc list-inside text-gray-700 space-y-1">
@@ -567,7 +729,14 @@
                 <a href="https://marketplace.visualstudio.com/items?itemName=RajithaDisanayaka.react-codebridge"
                     target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">💻</div>
+                    <div class="flex justify-center mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/cnbtyclj.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">VS Code</h3>
                     <p class="text-gray-600 mb-4">
                         React-CodeBridge v1.2.2
@@ -578,7 +747,14 @@
                 <!-- Chrome -->
                 <a href="https://chromewebstore.google.com/detail/pgfkdfnigjfldfdbnigddjalgjnhgdoa" target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">🌐</div>
+                    <div class="flex justify-center mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ygvjgetg.json"
+                            trigger="hover"
+                            colors="primary:#3b82f6"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Chrome</h3>
                     <p class="text-gray-600 mb-4">
                         React-DomPicker v1.2.2
@@ -589,7 +765,14 @@
                 <!-- Firefox -->
                 <a href="https://addons.mozilla.org/en-US/firefox/addon/react-dompicker-official/" target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">🦊</div>
+                    <div class="flex justify-center mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/wxnxiano.json"
+                            trigger="hover"
+                            colors="primary:#ff7a00"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Firefox</h3>
                     <p class="text-gray-600 mb-4">
                         React-DomPicker v1.2.2
@@ -600,7 +783,14 @@
                 <!-- Product Hunt -->
                 <a href="https://www.producthunt.com/products/react-dompicker" target="_blank"
                     class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
-                    <div class="text-5xl mb-4">🚀</div>
+                    <div class="flex justify-center mb-4">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/fkdzyfle.json"
+                            trigger="hover"
+                            colors="primary:#da552f"
+                            style="width:64px;height:64px">
+                        </lord-icon>
+                    </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">Product Hunt</h3>
                     <p class="text-gray-600 mb-4">
                         Share your feedback!
