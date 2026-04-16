@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #f4efe4;
+    color: #1a1714;
+    font-family: "Google Sans Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-feature-settings: "calt" 1, "liga" 1, "ss01" 1;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.65;
+    letter-spacing: -0.005em;
+  }
+
+  ::selection {
+    background-color: #1a1714;
+    color: #f4efe4;
+  }
+
+  a {
+    color: #1d4ed8;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@layer components {
+  .rule {
+    border-top: 1px solid #d9d2c2;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6b635a;
+    font-weight: 500;
+  }
+
+  .prose p + p {
+    margin-top: 1rem;
+  }
+}
